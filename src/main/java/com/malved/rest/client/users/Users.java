@@ -3,11 +3,12 @@ package com.malved.rest.client.users;
 
 import java.util.List;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import java.io.IOException;
 
 
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class Users {
 
     private final UsersRetrofitClient usersRetrofitClient;

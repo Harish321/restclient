@@ -46,7 +46,7 @@ final MalvedClient malvedClient = MalvedClient.builder()
             .build();
 ```
 
-## How to use
+## Examples of usage
 
 Create user:
 
@@ -59,17 +59,25 @@ final User user = malvedClient
 Get user by id:
 
 ```java
-final User user = malvedClientWithAuthentication
+final User user = malvedClient
             .users()
-            .get(12L);
+            .delete(12L);
 ```
 
-Get all users:
+Get all groups:
 
 ```java
-final List<User> users = malvedClient
-            .users()
+final List<Group> groups = malvedClient
+            .groups()
             .list();
+```
+
+Update group
+
+```java
+final Group group = malvedClient
+            .groups()
+            .update(3L, new Group("name"));
 ```
 
 

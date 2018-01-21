@@ -2,10 +2,10 @@ package com.malved.rest.client.groups;
 
 import java.io.IOException;
 import java.util.List;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class Groups {
 
     private final GroupsRetrofitClient groupsRetrofitClient;
@@ -34,5 +34,4 @@ public class Groups {
     public List<Group> list(){
         return groupsRetrofitClient.list().execute().body();
     }
-
 }
