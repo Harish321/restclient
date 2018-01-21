@@ -26,7 +26,7 @@ final MalvedClient malvedClient = MalvedClient.builder()
             .build();
 ```
 
-HTTP Basic authentication can be configured as follows:
+Enabling HTTP Basic authentitaction:
 
 ```java
  final MalvedClient malvedClient = MalvedClient.builder()
@@ -35,7 +35,7 @@ HTTP Basic authentication can be configured as follows:
             .credentials(new Credentials("name", "password"))
             .build();
 ```
-HTTPS configuration:
+Enabling HTTPS:
 
 ```java
 final MalvedClient malvedClient = MalvedClient.builder()
@@ -72,7 +72,7 @@ final List<Group> groups = malvedClient
             .list();
 ```
 
-Update group
+Update group:
 
 ```java
 final Group group = malvedClient
