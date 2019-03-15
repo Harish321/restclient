@@ -61,7 +61,7 @@ Get user by id:
 ```java
 final User user = malvedClient
             .users()
-            .delete(12L);
+            .get(12L);
 ```
 
 Get all groups:
